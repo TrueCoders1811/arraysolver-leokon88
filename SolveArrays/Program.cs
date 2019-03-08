@@ -6,6 +6,8 @@ namespace SolveArrays
     {
         static void Main(string[] args)
         {
+            ArraySolver solver = new ArraySolver();
+            solver.AverageEvens(new int[]{ 1, 3, 4, 5});
             /*
              * 1. Create a branch in git and make your commits on that branch
              * 2. Open the ArraySolver class and implement the four methods provided.
@@ -13,7 +15,7 @@ namespace SolveArrays
              * 4. If you pass all tests then you can push your branch back to the GitHub repository
              * 
              * Remember to make commits throughout!
-             */ 
+             */
             Console.ReadLine();
         }
     }
