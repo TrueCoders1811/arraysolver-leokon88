@@ -48,12 +48,11 @@ namespace SolveArrays
                     sum = 0;
                     count = 1;
                 }
-               
-            }
+                           }
          
                 avg = sum / count;
            
-            Console.WriteLine(sum);
+               Console.WriteLine(sum);
                Console.WriteLine(count);
                Console.WriteLine(avg);
             return avg;
@@ -61,28 +60,18 @@ namespace SolveArrays
 
         public bool IsSumOdd(List<int> numbers)
         {
-            //int sum = 0;
-            //int count = 0;
-            //int avg = 1;
-            //for (int i = 0; i < numbers.Length; i++)
-            //{
-            //    if (numbers[i] % 2 = 0)
-            //    {
-            //        sum += numbers[i];
-            //        count++;
-            //    }
-            //    if (sum != 0 && count != 0)
-            //    {
-            //        avg = sum / count;
-            //    }
-            //    Console.WriteLine(sum);
-            //    Console.WriteLine(count);
-            //    Console.WriteLine(avg);
-            //}
-            //return avg;
-
-            // TODO: Implement this method
-            throw new NotImplementedException();
+            int sum = 0;
+            foreach (int number in numbers)
+            {
+               sum += number;
+            }
+            if (sum % 2 != 0)
+            {
+                return true;
+            }
+            else
+            { return false; }       
+            
         }
     }
 }
