@@ -7,14 +7,27 @@ namespace SolveArrays
     {
         public int Sum(int[] numbers)
         {
-            // TODO: Implement this method
-            throw new NotImplementedException();
+            int sum = 0;
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                sum += numbers[i];
+            }
+            return sum;
+           
         }
 
         public int SumEvens(int[] numbers)
         {
-            // TODO: Implement this method
-            throw new NotImplementedException();
+            int sum = 0;
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] % 2 == 0)
+                {
+                    sum += numbers[i];
+                }
+            }
+            return sum;
+
         }
 
         public double AverageEvens(int[] numbers)
